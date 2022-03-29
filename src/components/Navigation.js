@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -67,14 +67,14 @@ const Navigation = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                    <Link className="nav-link" to="policy">
-                        Policy
-                    </Link>
+                  <Link className="nav-link" to="policy">
+                    Policy
+                  </Link>
                 </li>
                 <li className="">
-                    <Link className="nav-link" to="giftcards">
-                        Gift Cards
-                    </Link>
+                  <Link className="nav-link" to="giftcards">
+                    Gift Cards
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -84,9 +84,9 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="nav-item mx-4">
-                <Link className="nav-link" to="userprofile">
-                    User Profile
-                </Link>
+              <Link className="nav-link" to="userprofile">
+                User Profile
+              </Link>
             </li>
             <li className="nav-item mx-4">
               <Link className="nav-link" to="help">
@@ -95,19 +95,10 @@ const Navigation = () => {
             </li>
           </ul>
           <form className="d-flex mx-5">
-            <input
-              className="form-control me-2"
-              type="text"
-              placeholder="Username"
-            />
-            <input
-              className="form-control me-2"
-              type="password"
-              placeholder="Password"
-            />
-            <button className="btn btn-warning " type="submit">
-              Login
-            </button>
+            <Link to="login" className="btn btn-warning " type="submit">
+              {" "}
+              Login{" "}
+            </Link>
             &nbsp;&nbsp;
             <Link to="register" className="btn btn-warning " type="submit">
               {" "}

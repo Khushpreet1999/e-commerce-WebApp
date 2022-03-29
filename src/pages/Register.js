@@ -5,29 +5,17 @@ export const Register = () => {
   return (
     <div class="signup">
       <div class="formsignup">
-        <form class="form" id="form" id="signup">
+        <form class="form" id="signup">
           <div class="form__item">
-            <label for="firstname">First Name</label>
+            <label for="firstname">Full Name</label>
             <input
               type="text"
               class="input"
-              name="firstname"
-              placeholder="John"
+              name="fullname"
+              placeholder="John Smith"
             />
             <span class="rule firstname-rule">Only letters</span>
-            <span class="error">First Name cannot be blank</span>
-          </div>
-
-          <div className="form__item">
-            <label for="lastname">Last Name</label>
-            <input
-              type="text"
-              class="input"
-              name="lastname"
-              placeholder="Smith"
-            />
-            <span class="rule lastname-rule">Only letters</span>
-            <span class="error">Last Name cannot be blank</span>
+            <span class="error">Name cannot be blank</span>
           </div>
 
           <div className="form__item">
@@ -40,6 +28,17 @@ export const Register = () => {
             />
             <span class="rule email-rule">Valid email</span>
             <span class="error">Email cannot be blank</span>
+          </div>
+          <div className="form__item">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="input"
+              name="address"
+              placeholder="111 Larchmere Avenue"
+            />
+
+            <span class="error">Address cannot be blank</span>
           </div>
 
           <div class="form__item">
@@ -69,7 +68,7 @@ export const Register = () => {
             <span class="error">Password cannot be blank</span>
           </div>
           <p class="message">
-            Already registered? <Link to="login">Sign In</Link>
+            Already registered? <Link to="/login">Sign In</Link>
           </p>
           <input
             class="submit"
